@@ -3,7 +3,7 @@ var closebutton = document.getElementById('closeMenuBtn');
 var links = document.getElementById('links');
 var reqs = document.getElementById('reqs');
 var everything = document.getElementById('everything');
-document.cookie = "read=false"
+var reqCookie = document.cookie = "read=false"
 
 function menuBtn() {
      links.style.display = "unset";
@@ -18,12 +18,12 @@ function closeBtn() {
 }
 
 function reqBtnClicked() {
-    document.cookie = "read=true";
+    reqCookie = document.cookie = "read=true";
     everything.style.display = "unset";
     reqs.style.display = "none"
 }
 
-if(document.cookie == "read=true") {
+if(reqCookie == document.cookie == "read=true") {
     everything.style.display = "unset";
     reqs.style.display = "none"
 }
