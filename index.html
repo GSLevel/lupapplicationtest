@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for +1UP</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="header">
+        <img src="https://cdn.discordapp.com/attachments/699663156011729023/747133963222515772/1UPLogoTransparent.png" id="logo">
+        <button type="button" id="menuBtn">Menu</button>
+        <button type="button" id="closeMenuBtn" style="display: none;">Close Menu</button>
+    </div>
+    <div id="links" style="display: none">
+        <ul id="coreLinks">
+            <li>About +1UP</li>
+            <li>How to apply</li>
+        </ul>
+    </div>
+    <div id="info">
+    <h1>Apply For +1UP</h1>
+    <h2>You MUST be in the +1UP Discord server</h2>
+    <button id="discord" onclick="document.location = 'https://discord.gg/pkemSfB'">+1UP Discord Server</a>
+    </div>
+
+    <form action="https://formspree.io/mbjzeqwz" method="POST" id="application">
+        <div id="ign">
+        <strong>IGN:</strong> <input type="text" name="In Game Name" placeholder="Type in your krunker IGN" id="ignInput">
+        </div>
+        <div id="tag">
+        <strong>Discord Tag:</strong> <input type="text" name="Discord Tag" placeholder="Type in your discord tag" id="tagInput">
+        </div>
+        <div id="shot">
+        <strong>Screenshot of stats (Take a screenshot of your krunker stats and send it on imgur or discord):</strong> <input type="text" name="Screenshot of Stats" placeholder="Paste the link of your screenshot" id="shotInput">
+        </div>
+        <button type="submit" class="submit">Submit</button>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
