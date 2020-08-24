@@ -24,7 +24,7 @@
     <div id="info">
     <h1>Apply For +1UP</h1>
     <h2>You MUST be in the +1UP Discord server</h2>
-    <button id="discord" onclick="document.location = 'https://discord.gg/pkemSfB'">+1UP Discord Server</a>
+    <button id="discord" onclick="document.location = 'https://discord.gg/pkemSfB'">+1UP Discord Server</button>
     </div>
 
     <form action="https://formspree.io/mbjzeqwz" method="POST" id="application">
@@ -37,8 +37,9 @@
         <div id="shot">
         <strong>Screenshot of stats (Take a screenshot of your krunker stats and send it on imgur or discord):</strong> <input type="text" name="Screenshot of Stats" placeholder="Paste the link of your screenshot" id="shotInput">
         </div>
-        <button type="submit" class="submit">Submit</button>
+        <button type="submit" class="submit" style="display: none;">Submit</button>
     </form>
+    <button id="check">Check</button>
 </div>
     <script src="index.js"></script>
 </body>
