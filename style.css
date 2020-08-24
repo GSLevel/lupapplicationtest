@@ -39,7 +39,7 @@ html, body {
     font-weight: bold;
 }
 
-#discord:hover, .submit:hover {
+#discord:hover, .submit:hover, #check:hover {
     transform: scale(1.1)
 }
 
@@ -123,4 +123,17 @@ html, body {
     left: 400px;
     font-size: 50px;
     top: 200px
+}
+
+#check {
+    background-color: darkgreen;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s;
+    font-weight: bold;
+    position: relative;
+    left: 870px;
+    margin-top: 30px
 }
