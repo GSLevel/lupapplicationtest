@@ -32,7 +32,8 @@ if(document.cookie == "read=true") {
     reqs.style.display = "none";
 }
 
-function check() {
+function check(e) {
+    e.preventDefault()
    if(ign.value.trim() == "") {
       checkBtn.innerHTML = "type in your ign";
       setTimeout(function() {
@@ -52,6 +53,7 @@ function check() {
        checkBtn.style.display = "none";
        submit.style.display = "unset";
    }
+
 }
 
 reqs.addEventListener("click", reqBtnClicked);
