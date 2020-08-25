@@ -9,11 +9,13 @@
 <body>
     <button id="reqs" type="button" target="null" onclick="document.location = 'https://gslevel.github.io/lupreqs/'"><strong>Read the +1UP Requirements before applying</strong></button>
     <div id="everything" style="display: none;">
+    <header>
     <div id="header">
         <img src="https://cdn.discordapp.com/attachments/699663156011729023/747133963222515772/1UPLogoTransparent.png" id="logo">
         <button type="button" id="menuBtn">Menu</button>
         <button type="button" id="closeMenuBtn" style="display: none;">Close Menu</button>
     </div>
+    </header>
     <div id="links" style="display: none">
         <ul id="coreLinks">
             <li>About +1UP</li>
@@ -29,17 +31,17 @@
 
     <form action="https://formspree.io/mbjzeqwz" method="POST" id="application">
         <div id="ign">
-        <strong>IGN:</strong> <input type="text" name="In Game Name" placeholder="Type in your krunker IGN" id="ignInput">
+        <strong>IGN:</strong> <input type="text" name="In Game Name" placeholder="Type in your krunker IGN" id="ignInput" maxlength="14" style="text-align: center;">
         </div>
         <div id="tag">
-        <strong>Discord Tag:</strong> <input type="text" name="Discord Tag" placeholder="Type in your discord tag" id="tagInput">
+        <tl id="tagText"><strong>Discord Tag:</tl></strong> <input type="text" name="Discord Tag" placeholder="Type in your discord tag" id="tagInput" style="text-align: center;">
         </div>
         <div id="shot">
-        <strong>Screenshot of stats (Take a screenshot of your krunker stats and send it on imgur or discord):</strong> <input type="text" name="Screenshot of Stats" placeholder="Paste the link of your screenshot" id="shotInput">
+        <strong><tl id="screen">Screenshot of stats</tl> <tl id="screen2">(Take a screenshot of your krunker stats and send it on imgur or discord):</tl></strong> <input type="text" name="Screenshot of Stats" placeholder="Paste the link of your screenshot" id="shotInput" style="text-align: center;">
         </div>
         <button type="submit" class="submit" style="display: none;">Submit</button>
+        <button id="check">Check</button>
     </form>
-    <button id="check">Check</button>
 </div>
     <script src="index.js"></script>
 </body>
