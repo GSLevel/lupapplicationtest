@@ -128,7 +128,7 @@
         transition: 0.4s;
         cursor: pointer;
         position: relative;
-        left: -100px;
+        left: -50px;
         bottom: 20px
     }
 
@@ -179,3 +179,77 @@
     }
 
 }
+
+@media screen and (max-width: 1024px) {
+    #menuBtn, #closeMenuBtn {
+        position: relative;
+        left: 300px
+    }
+
+    #ignText {
+        position: relative;
+        bottom: 50px;
+        left: 160px
+    }
+
+    #tagInput {
+        position: relative;
+        left: 5px;
+    }
+
+    #tagText {
+        position: relative;
+        top: 5px;
+        left: 5px
+    }
+
+    #screen {
+        position: relative;
+        left: 650px;
+        top: 20px
+    }
+
+    #screen2 {
+        position: relative;
+        left: 200px
+    }
+
+    #shotInput {
+       left: 360px
+    }
+}
+
+@media screen and (max-width: 412px) {
+    #menuBtn, #closeMenuBtn {
+        position: relative;
+        left: 50px
+    }
+
+    #ignText {
+        position: relative;
+        bottom: 50px;
+        left: 160px
+    }
+
+    #tagInput {
+        position: relative;
+        left: 50px;
+    }
+
+    #tagText {
+        position: relative;
+        top: 30px;
+        left: 45px
+    }
+
+    #screen {
+        position: relative;
+        left: 470px
+    }
+
+    #screen2 {
+        position: relative;
+        left: 350px
+    }
+}
+
