@@ -29,21 +29,23 @@
     <h2>You MUST be in the +1UP Discord server</h2>
     <button id="discord" onclick="document.location = 'https://discord.gg/pkemSfB'">+1UP Discord Server</button>
     </div>
+  
 
-    <form action="https://formspree.io/mbjzeqwz" method="POST" id="application">
-        <div id="ign">
-        <strong><tl id="ignText">IGN:</tl></strong> <input type="text" name="In Game Name" placeholder="Type in your krunker IGN" id="ignInput" maxlength="14" style="text-align: center;">
-        </div>
-        <div id="tag">
-        <tl id="tagText"><strong>Discord Tag:</tl></strong> <input type="text" name="Discord Tag" placeholder="Type in your discord tag" id="tagInput" style="text-align: center;">
-        </div>
-        <div id="shot">
-        <strong><tl id="screen">Screenshot of stats</tl> <tl id="screen2">(Take a screenshot of your krunker stats and send it on imgur or discord):</tl></strong> <input type="text" name="Screenshot of Stats" placeholder="Paste the link of your screenshot" id="shotInput" style="text-align: center;">
-        </div>
-        <button type="submit" class="submit" style="display: none;">Submit</button>
-        <button id="check">Check</button>
-    </form>
+<div id="form">
+   <div id="ign">
+   <strong><tl id="ignText">IGN:</tl></strong> <input type="text" name="In Game Name" placeholder="Type in your krunker IGN" id="ignInput" maxlength="14" style="text-align: center;">
+   </div>
+   <div id="tag">
+   <tl id="tagText"><strong>Discord Tag:</tl></strong> <input type="text" name="Discord Tag" placeholder="Type in your discord tag" id="tagInput" style="text-align: center;">
+   </div>
+   <div id="shot">
+   <strong><tl id="screen">Screenshot of stats</tl> <tl id="screen2">(Take a screenshot of your krunker stats and send it on imgur or discord):</tl></strong> <input type="text" name="Screenshot of Stats" placeholder="Paste the link of your screenshot" id="shotInput" style="text-align: center;">
+   </div>
+   <button class="submit" onclick="sendWebhook()" style="display: none;" >Submit</button>
+   <button id="check">Check</button>
 </div>
+</div>
+    <h1 id="sentMsg" style="display: none; text-align: center;">Application sent! If it is accepted or declined, you will be pinged in the +1UP Discord Server</h1>
     <script src="index.js"></script>
 </body>
 </html>
