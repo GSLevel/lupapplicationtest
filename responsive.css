@@ -239,7 +239,7 @@
     #tagText {
         position: relative;
         top: 30px;
-        left: 45px
+        left: 150px
     }
 
     #screen {
@@ -251,5 +251,99 @@
         position: relative;
         left: 350px
     }
+
+    #form {
+        position: relative;
+        right: 400px
+    }
+
+    #ign {
+        position: relative;
+        left: 400px
+    }
+
+    #tag {
+        position: relative;
+        left: 400px
+    }
+
+    .submit, #check {
+        position: relative;
+        left: 500px
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    #menuBtn, #closeMenuBtn {
+        position: relative;
+        left: 50px
+    }
+
+    #ignText {
+        position: relative;
+        bottom: 50px;
+        left: 160px
+    }
+
+    #tagInput {
+        position: relative;
+        left: 50px;
+    }
+
+    #tagText {
+        position: relative;
+        top: 30px;
+        left: 150px
+    }
+
+    #screen {
+        position: relative;
+        left: 470px
+    }
+
+    #screen2 {
+        position: relative;
+        left: 350px
+    }
+
+    #form {
+        position: relative;
+        right: 400px
+    }
+
+    #ign {
+        position: relative;
+        left: 400px
+    }
+
+    #tag {
+        position: relative;
+        left: 400px
+    }
+
+    .submit, #check {
+        position: relative;
+        left: 500px
+    }
+    
+}
+
+@media screen and (max-width: 1366px) {
+    #menuBtn, #closeMenuBtn {
+        position: relative;
+        left: 900px
+    }
+
+    #form {
+        position: relative;
+        left: -300px
+    }
+
+    .submit, #check {
+        position: relative;
+        left: 850px
+    }
+    
 }
 
